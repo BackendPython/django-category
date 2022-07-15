@@ -4,7 +4,6 @@ body {
   .full{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    flex-wrap: wrap !important;
     min-height: 100vh;
     width: 100%;
   }
@@ -12,4 +11,19 @@ body {
     text-decoration: none;
     color: white !important;
     background-color: royalblue;
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .full{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .full{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
